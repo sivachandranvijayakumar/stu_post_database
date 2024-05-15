@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h2>Student Details</h2>
+
+    <table border="1" style="border-collapse: collapse;">
+        <tr>
+            <th>NAME</th>
+            <th>AGE</th>
+            <th>ROLL_NO</th>
+            <th>MARK1</th>
+            <th>MARK2</th>
+            <th>MARK3</th>
+            <th>MARK4</th>
+            <th>MARK5</th>
+        </tr>
+        {% for i in data %}
+        <tr>
+            <td>{{i[1]}}</td>
+            <td>{{i[2]}}</td>
+            <td>{{i[3]}}</td>
+            <td>{{i[4]}}</td>
+            <td>{{i[5]}}</td>
+            <td>{{i[6]}}</td>
+            <td>{{i[7]}}</td>
+            <td>{{i[8]}}</td>
+            
+        </tr>        
+        {% endfor %}
+    </table>
+
+</body>
+</html>
